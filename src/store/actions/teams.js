@@ -1,6 +1,6 @@
-import { addTeam } from "../../services/api";
+import { addTeam } from '../../services/api';
 // import { addError } from "./errors";
-import { LOAD_TEAMS, REMOVE_TEAM } from "../actionTypes";
+import { LOAD_TEAMS, REMOVE_TEAM } from '../actionTypes';
 
 export const loadTeams = teams => ({
   type: LOAD_TEAMS,
@@ -37,12 +37,12 @@ export const remove = id => ({
 export const postNewTeam = team => {
   // let { currentUser } = getState();
   // const id = currentUser.user.id;
-  console.log("posting new team");
-  return addTeam(team)
-    .then(res => console.log(res))
-    .catch(err => {
-      console.log(err);
-    });
+  console.log('posting new team');
+  return addTeam(team);
+  // .then(res => console.log(res))
+  // .catch(err => {
+  //   console.log(err);
+  // });
 };
 
-// export const 
+// export const

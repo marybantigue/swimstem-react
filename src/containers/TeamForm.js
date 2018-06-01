@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { postNewTeam } from "../store/actions/teams";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { postNewTeam } from '../store/actions/teams';
 
 const initialTeamState = {
-  name: "",
-  shortName: "",
-  location: "",
+  name: '',
+  shortName: '',
+  location: '',
   otherCoaches: []
 };
 
@@ -17,16 +17,14 @@ class TeamForm extends Component {
 
   handleNewTeam = event => {
     event.preventDefault();
-    console.log("handling new team");
+    console.log('handling new team');
     postNewTeam(this.state);
     // this.setState( initialTeamState );
     // this.props.history.push("/team");
   };
 
   handleChange = e => {
-    this.setState(
-      { [e.target.name]: e.target.value }
-    );
+    this.setState({ [e.target.name]: e.target.value });
   };
 
   render() {

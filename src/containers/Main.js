@@ -1,25 +1,25 @@
-import React from "react";
-import { Switch, Route, withRouter, Redirect } from "react-router-dom";
-import { connect } from "react-redux";
+import React from 'react';
+import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 // import Team from "../components/Team";
 // import AuthForm from "../components/AuthForm";
 // import { authUser } from "../store/actions/auth";
 // import { removeError } from "../store/actions/errors";
 // import withAuth from "../hocs/withAuth";
-import TeamForm from "../containers/TeamForm";
+import TeamForm from '../containers/TeamForm';
 
 const Main = props => {
   const { authUser, errors, removeError, currentUser } = props;
   return (
     <main>
       <div className="container">
-      <Switch>
-        <Route
-          path="/team"
-          // component={withAuth(TeamForm)}
-          render={props => <TeamForm {...props} />}
-        />
-        {/* <Route
+        <Switch>
+          <Route
+            path="/team"
+            // component={withAuth(TeamForm)}
+            render={props => <TeamForm {...props} />}
+          />
+          {/* <Route
           exact
           path="/"
           render={props => <Homepage currentUser={currentUser} {...props} />}
@@ -61,7 +61,7 @@ const Main = props => {
           path="/users/:id/messages/new"
           component={withAuth(MessageForm)}
         /> */}
-      </Switch>
+        </Switch>
       </div>
     </main>
   );

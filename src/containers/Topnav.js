@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-import { Navbar, NavItem } from "react-materialize";
+import { Navbar, NavItem } from 'react-materialize';
 // import { logout } from "../store/actions/auth";
 // import Logo from "../images/warbler-logo.png";
 
@@ -18,8 +18,7 @@ class Topnav extends Component {
       //     </div>
       //   </div>
       // </nav>
-      <Navbar brand='Swimstem' right>
-      </Navbar>
+      <Navbar brand="Swimstem" right />
     );
   }
 }
