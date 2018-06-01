@@ -29,8 +29,8 @@ const App = () => (
 
         <SideNav
           // trigger={<Button>SIDE NAV DEMO</Button>}
-          isFixed
-          isOpen
+          isfixed="true"
+          isopen="true"
           options={
             {
               // closeOnClick: true,

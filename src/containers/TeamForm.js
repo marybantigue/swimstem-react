@@ -19,8 +19,8 @@ class TeamForm extends Component {
     event.preventDefault();
     console.log('handling new team');
     postNewTeam(this.state);
-    // this.setState( initialTeamState );
-    // this.props.history.push("/team");
+    this.setState(initialTeamState);
+    this.props.history.push('/team');
   };
 
   handleChange = e => {
@@ -42,7 +42,7 @@ class TeamForm extends Component {
               name="name"
               onChange={this.handleChange}
             />
-            <label for="name">Team Name</label>
+            <label htmlFor="name">Team Name</label>
           </div>
         </div>
         <div className="row">
@@ -54,7 +54,7 @@ class TeamForm extends Component {
               name="shortName"
               onChange={this.handleChange}
             />
-            <label for="name">Short Name</label>
+            <label htmlFor="name">Short Name</label>
           </div>
         </div>
         <div className="row">
@@ -66,7 +66,7 @@ class TeamForm extends Component {
               name="location"
               onChange={this.handleChange}
             />
-            <label for="name">Location</label>
+            <label htmlFor="name">Location</label>
           </div>
         </div>
         <button type="submit" className="btn btn-success">

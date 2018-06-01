@@ -1,4 +1,6 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/database';
 
 var config = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -18,8 +20,8 @@ let teamsRef = db.ref('teams');
 export function addTeam(team) {
   console.log('adding team');
   let pushedRef = teamsRef.push(team, function(res) {
-    console.log(res);
+    // console.log(res);
   });
-  console.log(pushedRef.getKey);
+  // console.log(pushedRef.getKey);
   return { id: pushedRef.getKey() };
 }
