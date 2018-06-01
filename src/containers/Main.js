@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 // import { removeError } from "../store/actions/errors";
 // import withAuth from "../hocs/withAuth";
 import TeamForm from '../containers/TeamForm';
+import AuthForm from '../components/AuthForm';
 
 const Main = props => {
   const { authUser, errors, removeError, currentUser } = props;
@@ -18,6 +19,11 @@ const Main = props => {
             path="/team"
             // component={withAuth(TeamForm)}
             render={props => <TeamForm {...props} />}
+          />
+          <Route
+            path="/login"
+            // component={withAuth(TeamForm)}
+            render={props => <AuthForm {...props} />}
           />
           {/* <Route
           exact

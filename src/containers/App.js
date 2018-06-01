@@ -6,6 +6,7 @@ import Topnav from './Topnav';
 import Main from './Main';
 
 import { SideNav, SideNavItem, Button } from 'react-materialize';
+
 // import { setAuthorizationToken, setCurrentUser } from "../store/actions/auth";
 // import jwtDecode from "jwt-decode";
 
